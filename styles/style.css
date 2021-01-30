@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+*:focus {
+  box-shadow: none;
+}
+
+body, html {
+  color: #444444;
+  font-size: 1em;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+  font-family: "Karla", sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #7f8c8d;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  background-color: #2c3e50;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1999;
+  text-align: center;
+}
+
+ul {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  left: 20%;
+}
+
+li a {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 1.2em;
+  width: 9vw;
+  text-decoration: none;
+  color: #f0f3f3;
+  background-color: #2c3e50;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+}
+
+li a:hover {
+  color: #7f8c8d;
+}
+
+.logo {
+  font-size: 1.15em;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.splash {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background-image: url("../images/IMG_1834.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 95vh;
+}
+
+.page-intro {
+  margin: auto;
+  text-align: center;
+}
+
+.main-title {
+  margin: -190px 0 0 0;
+  font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-family: "Rubik", sans-serif;
+}
+
+.main-subtitle {
+  margin: 12px 0 24px 0;
+  font-weight: normal;
+  color: #2c3e50;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2 em;
+}
+
+.btn {
+  padding: 12px 34px 12px 34px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid #2c3e50;
+  border-radius: 2%;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #273646;
+  color: #ffffff;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #7f8c8d;
+  left: 64%;
+  bottom: 17px;
+  margin-left: -25px;
+  color: #f0f3f3;
+}
+
+.section-title:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #7f8c8d;
+  left: 37%;
+  bottom: 17px;
+  margin-left: -25px;
+  color: #f0f3f3;
+}
+
+.about {
+  background-color: #2c3e50;
+  color: #f0f3f3;
+  padding: 10vh 0;
+}
+
+.section-intro {
+  margin: 30px 0 0 0;
+  text-align: justify;
+}
+
+.features-wrapper {
+  display: flex;
+}
+
+.features {
+  background-color: #f0f3f3;
+}
+
+.feature {
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i {
+  width: 10vh;
+  height: 10vh;
+  line-height: 10vh;
+  color: #ffffff;
+  font-size: 2em;
+  background-color: #7f8c8d;
+  border-radius: 50%;
+  box-shadow: 2px 2px #4e5758;
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  margin: 24px 0 24px 0;
+  padding: 0 24px;
+}
+
+.section-feature-title {
+  position: relative;
+  padding: 24px 0;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  text-transform: uppercase;
+}
+
+/*socials*/
+.socials {
+  width: 100%;
+  text-align: center;
+  background-color: #2c3e50;
+}
+
+.social-header {
+  text-transform: uppercase;
+  color: #f0f3f3;
+}
+
+.socialdivs {
+  width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fb {
+  width: 10vh;
+  height: 10vh;
+  float: left;
+}
+
+.fb:hover {
+  background-color: #7f8c8d;
+}
+
+.ig {
+  width: 10vh;
+  height: 10vh;
+  float: left;
+}
+
+.ig:hover {
+  background-color: #7f8c8d;
+}
+
+.fb a {
+  width: 10vh;
+  height: 10vh;
+  line-height: 10vh;
+  color: #f0f3f3;
+  font-size: 2em;
+}
+
+.ig a {
+  width: 10vh;
+  height: 10vh;
+  line-height: 10vh;
+  color: #f0f3f3;
+  font-size: 2em;
+}
+
+.rights {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5vh;
+  background-color: #f0f3f3;
+}
+
+.socials_section {
+  width: 898px;
+  left: -104.2px;
+  position: relative;
+}
+
+.socials {
+  flex-wrap: wrap;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 41px;
+}
+
+.socials_section {
+  flex-wrap: wrap;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  max-width: 968px;
+  text-align: center;
+  padding: 41px;
+}
+
+.socials_link {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  height: 60vh;
+  left: 10vw;
+  box-shadow: 16px 22px 9px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background-image: url(../images/P1012451.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #f0f3f3;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 60px;
+  font-family: 'Sacramento', cursive;
+}
+
+.socials_link:hover {
+  color: #f0f3f3;
+}
+
+.socials_par {
+  font-size: 4.5em;
+  font-family: 'Sacramento', cursive;
+  text-align: left;
+}
+
+.socials_link i {
+  text-align: right;
+  line-height: 50vh;
+  height: 50vh;
+  width: 50vh;
+  font-size: 2em;
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+
+/*motto*/
+.slogan {
+  text-align: center;
+  background-image: url(../images/P1012655.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #f0f3f3;
+}
+
+.slogan h1 {
+  font-family: "Rubik", sans-serif, sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10vh 0 0 0;
+}
+
+.slogan p {
+  font-family: "Karla", sans-serif, sans-serif;
+  font-size: 18px;
+}
+
+.slogan p.author {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.slogan .bg {
+  padding: 0 10px 30px 10px;
+}
+
+@media (orientation: landscape) {
+  .slogan p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .slogan .bg {
+    padding: 0 10px  50px 10px;
+  }
+  .slogan h1 {
+    font-size: 1.5em;
+    margin-bottom: 35px;
+  }
+  .slogan p {
+    font-size: 26px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slogan p.author {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slogan .bg {
+    padding: 0 10px 80px 10px;
+  }
+  .slogan h1 {
+    font-size: 1.5em;
+    margin-bottom: 55px;
+  }
+  .slogan p {
+    font-size: 1em;
+    width: 50%;
+  }
+  .slogan p.author {
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+}
+
+/*hobby*/
+.hobby {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 10vh 0;
+  background-color: #f0f3f3;
+}
+
+.hobby .item {
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hobby .item:nth-of-type(1) {
+  background-image: url(../images/unnamed.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+  background-image: url(../images/unnamed.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+  background-image: url(../images/unnamed.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+  background-image: url(../images/unnamed.jpg);
+}
+
+.hobby .item p {
+  font-family: "Rubik", sans-serif, sans-serif;
+  color: #f0f3f3;
+  text-align: center;
+  text-shadow: 0 0 4px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  padding: 05px 0;
+}
+
+@media (min-width: 533px) {
+  .hobby .item {
+    float: left;
+    width: 70vh;
+    height: 70vh;
+    margin: 5vh 5vh;
+    left: 30vh;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .hobby .item p {
+    font-size: 30px;
+    padding: 15px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hobby .item p {
+    /*padding: 0;*/
+    line-height: 70vh;
+    opacity: 0;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .hobby .item:hover p {
+    opacity: 1;
+  }
+  .hobby .item {
+    background-size: 100%;
+    transition: 1s;
+    overflow: hidden;
+  }
+  .hobby .item:hover {
+    background-size: 130%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hobby .item p {
+    font-size: 40px;
+  }
+}
