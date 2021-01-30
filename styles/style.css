@@ -86,6 +86,30 @@ li a:hover {
   font-size: 1.3em;
 }
 
+@media(orientation: portrait) and (max-width: 420px) {
+
+  #topnav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li a {
+    font-size: 16px;
+    width: 10vh;
+    line-height: 3em;
+  }
+
+
+  .insta, .pinterest {
+font-size: 16px;
+
+  }
+
+
+}
+
+
+
+
 /*section logo*/
 @keyframes headers {
   0% {
@@ -114,9 +138,9 @@ li a:hover {
  }
 
 @keyframes pictures {
-  0% { background-image: url("../images/cover.jpg");}
+  0% { background-image: url("../images/IMG_20191113_111754.jpg");}
   25% { background-image: url("../images/klify.jpg");}
-  50% { background-image: url("../images/P1012655.jpg");}
+  50% { background-image: url("../images/cover.jpg");}
 
 
 
@@ -207,14 +231,148 @@ li a:hover {
   color: var(--mainColour);}
 	
 
- /*
+  @media(min-width: 320px) {
+    .main-title {
+      font-size: 20px;
+      
+      line-height: 1.5em;
+    }
+  
+    .bluebutton {
+      font-size: 16px;
+    }
 
-.main-subtitle {
-  margin: 5vh 0 10vh 0;
-  font-weight: 200;
-  font-family: var(--secondFontFamily);
-  font-size: 2em;
-  animation:headers 1s linear 1;*/
+    .splash {
+      width: 100%;
+    }
+  
+  }
+
+  @media (min-width: 540px) {
+
+    .main-title {
+      font-size: 24px;
+  
+      line-height: 1.5em;
+    }
+  
+    .bluebutton {
+      font-size: 20px;
+    
+
+    }
+
+
+  }
+
+ 
+
+  @media (min-width: 720px) {
+
+    .main-title {
+      font-size: 30px;
+      
+      line-height: 1.5em;
+    }
+  
+    .bluebutton {
+      font-size: 26px;
+     
+
+    }
+
+
+  }
+  
+  @media (min-width: 840px) {
+
+    .main-title {
+      font-size: 34px;
+ 
+      line-height: 1.5em;
+    }
+  
+    .bluebutton {
+      font-size: 30px;
+  
+
+    }
+
+
+  }
+
+  
+  @media (min-width: 920px) {
+
+    .main-title {
+      font-size: 36px;
+  
+      line-height: 1.5em;
+    }
+  
+    .bluebutton {
+      font-size: 20px;
+      padding-top:35px;
+
+    }
+
+
+  }
+    
+  @media (min-width: 1200px) {
+
+    .main-title {
+      font-size: 40px;
+      
+      line-height: 1.5em;
+    }
+  
+    .bluebutton {
+      font-size: 36px;
+  
+
+    }
+
+
+  }
+
+
+  @media (min-width: 1600px) {
+
+    .main-title {
+      font-size: 44px;
+     
+      line-height: 1.5em;
+    }
+  
+    .bluebutton {
+      font-size: 40px;
+      
+
+    }
+
+
+  }
+
+  @media (min-width: 1800px) {
+
+    .main-title {
+      font-size: 46px;
+      
+      line-height: 1.5em;
+    }
+  
+    .bluebutton {
+      font-size: 42px;
+
+    }
+
+
+  }
+
+
+
+  
 
 
 /*section about*/
@@ -254,6 +412,62 @@ i {
 .section-intro {
   margin: 5vh 0 0 0;
   text-align: justify;
+}
+
+
+@media(min-width: 320px) {
+  
+}
+
+@media (min-width: 540px) {
+
+ 
+
+}
+
+
+
+@media (min-width: 720px) {
+
+  
+
+
+}
+
+@media (min-width: 840px) {
+
+  
+
+
+}
+
+
+@media (min-width: 920px) {
+
+ 
+
+
+}
+  
+@media (min-width: 1200px) {
+
+ 
+
+
+}
+
+
+@media (min-width: 1600px) {
+
+ 
+
+
+}
+
+@media (min-width: 1800px) {
+
+
+
 }
 
 
@@ -561,7 +775,7 @@ i {
   position: relative;
 }
 .photo, .photo2, .photo3, .photo4 {
-  background-image: url(../images/klify.jpg);
+  
   height: 50vh;
   width: 50%;
   background-repeat: no-repeat;
@@ -571,20 +785,24 @@ i {
 }
 
 .photo {
+  background-image: url(../images/klif2.jpg);
   left:0;
   top: 0;
 }
 .photo2 {
+  background-image: url(../images/sol.jpg);
   right: 0;
   top: 0;
 }
 
 .photo3 {
+  background-image: url(../images/andzia.jpg);
   bottom: 0;
   left: 0;
 }
 
 .photo4 {
+  background-image: url(../images/zielen.jpg);
   bottom: 0;
   right: 0;
 }
