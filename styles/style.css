@@ -54,7 +54,7 @@ ul {
   left: 15%;
 }
 
-li a, li i a {
+li a {
   float: left;
   text-align: center;
   font-size: var(--headerFontSize);
@@ -68,12 +68,12 @@ li a, li i a {
   font-weight: 300;
 }
 
-
-li i a{
-  width: 5vw;
-
-
+.insta, .pinterest {
+  width: 4vh;
+  font-size: 2em;
+  margin: 0 2vh;
 }
+
 li a i:hover {
   color:var(--secondColour);
 }
@@ -88,15 +88,36 @@ li a:hover {
 
 /*section logo*/
 @keyframes headers {
-  0% { transform:translateX(100%); }
-  100% { transform:translateX(0%); }
-}
+  0% {
+   transform: translate(100%, -50%)
+  }
+  3% {
+   transform: translate(100%, -50%)
+  }
+
+  6% {
+   transform: translate(0, -50%);
+  }
+
+  30% {
+   transform: translate(0, -50%);
+  }
+
+  33% {
+   transform: translate(-100%, -50%);
+  }
+
+  100% {
+   transform: translate(-100%, -50%);
+  }
+
+ }
 
 @keyframes pictures {
   0% { background-image: url("../images/cover.jpg");}
   25% { background-image: url("../images/klify.jpg");}
   50% { background-image: url("../images/P1012655.jpg");}
-  75% { background-image: url("../images/P1012548.jpg");}
+
 
 
 }
@@ -112,6 +133,7 @@ li a:hover {
   background-image: url("../images/cover.jpg");
   height: 100vh;
   animation:pictures 30s linear infinite;
+  overflow: hidden;
 
 }
 
@@ -119,28 +141,83 @@ li a:hover {
   margin: auto;
   text-align: center;
   color: var(--textColour);
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+   height: 30vh;
+   top: 50%;
+   left: 50%;
   
 }
 
 .main-title {
-  text-transform: uppercase;
   font-weight: 200;
   font-size: 3em;
   letter-spacing: 2px;
+  width: 100%;
   font-family: var(--secondFontFamily);
-  animation:headers 1s linear 1;
+  animation: headers 30s linear infinite;
+  transform: translate(100%, -50%);
+  text-align: center;
+  position: absolute;
+   top: 50%;
+   left: 0;
 }
+
+.page-intro h1:nth-of-type(2) {
+  animation-delay: 10s;
+ }
+
+ .page-intro h1:nth-of-type(3) {
+  animation-delay: 20s;
+ }
+
+ .page-intro a:nth-of-type(2) {
+  animation-delay: 10s;
+ }
+
+ .page-intro a:nth-of-type(3) {
+  animation-delay: 20s;
+ }
+
+ .bluebutton
+{
+	background-color: transparent;
+	padding: 10px 25px 10px 25px;
+	color: #efefef;
+	font-size: 2em;
+	text-decoration: none;
+  width: 15vh;
+  margin-top: 10vh;
+  animation: headers 30s linear infinite;
+  transform: translate(100%, -50%);
+  text-align: center;
+  position: absolute;
+   top: 50%;
+   left: 0;
+   width: 100%;
+   font-weight: 300;
+  
+}
+
+.bluebutton:hover
+{
+
+  color: var(--mainColour);}
+	
+
+ /*
 
 .main-subtitle {
   margin: 5vh 0 10vh 0;
   font-weight: 200;
   font-family: var(--secondFontFamily);
   font-size: 2em;
-  animation:headers 1s linear 1;
-}
+  animation:headers 1s linear 1;*/
+
 
 /*section about*/
-
 
 .container {
   max-width: 980px;
